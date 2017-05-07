@@ -18,8 +18,8 @@ public class ContainingClass : MonoBehaviour {
     private ArrayDefaultValuer<SerialisableClass> ADV2;
 
     void OnValidate() {
-        ArrayDefaultValuer<SerialisableClass>.OnValidate(ref ADV1, MonitoredArrayEveryNew, ArrayDefaultValuer.INITIALISE_DEFAULTS_ON_EVERY_NEW_INSTANCE_ADDED);
-        ArrayDefaultValuer<SerialisableClass>.OnValidate(ref ADV2, MonitoredArrayOnlyFromEmpty, ArrayDefaultValuer.INITIALISE_DEFAULTS_ONLY_WHEN_STARTING_FROM_EMPTY);
+        ArrayDefaultValuer<SerialisableClass>.OnValidate(ref ADV1, MonitoredArrayEveryNew, DefaultValuer.INITIALISE_DEFAULTS_ON_EVERY_NEW_INSTANCE_ADDED);
+        ArrayDefaultValuer<SerialisableClass>.OnValidate(ref ADV2, MonitoredArrayOnlyFromEmpty, DefaultValuer.INITIALISE_DEFAULTS_ONLY_WHEN_STARTING_FROM_EMPTY);
     }
 
 }
